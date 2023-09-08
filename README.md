@@ -18,6 +18,6 @@ ffmpeg -re -f lavfi -i pal75bars=rate=25 -f lavfi -i "sine=frequency=1000:sample
 #NTSC
 ```
 ffmpeg -re -f lavfi -i smptebars=rate=30000/1001 -f lavfi -i "sine=frequency=1000:sample_rate=48000" -ac 2 \
--ac 2 -vf "scale=720:480" -pix_fmt yuv420p -colorspace smpte170m -color_primaries smpte170m -color_trc smpte170m \
+-vf "scale=720:480" -pix_fmt yuv420p -colorspace smpte170m -color_primaries smpte170m -color_trc smpte170m \
 -c:v rawvideo -c:a pcm_s16le -f nut - | ffplay -fs -
 ```
