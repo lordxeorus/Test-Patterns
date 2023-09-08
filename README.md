@@ -1,5 +1,5 @@
 # Test-Patterns
-PAL/NTSC FFMpeg test pattern generation - straight to screen
+EBU colour bars 100/75 for PAL and SMPTE color bars for NTSC - FFMpeg test pattern generation - straight to screen
 
 #PAL100
 ```
