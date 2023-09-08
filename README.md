@@ -1,5 +1,5 @@
 # Test-Patterns
-PAL/NTSC FFMpeg test pattern generation
+PAL/NTSC FFMpeg test pattern generation - straight to screen
 
 #PAL100
 ```
