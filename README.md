@@ -5,14 +5,14 @@ PAL/NTSC FFMpeg test pattern generation
 ```
 ffmpeg -re -f lavfi -i pal100bars=rate=50 -f lavfi -i "sine=frequency=1000:sample_rate=48000" \
 -vf "scale=720:576"  -colorspace bt470bg -color_primaries bt470bg -color_trc gamma28 \
--c:v rawvideo -pix_fmt yuv422p -c:a pcm_s16le -f matroska - | ffplay -fs -
+-c:v rawvideo -c:a pcm_s16le -f matroska - | ffplay -fs -
 ```
 
 #PAL75
 ```
 ffmpeg -re -f lavfi -i pal75bars=rate=50 -f lavfi -i "sine=frequency=1000:sample_rate=48000" \
 -vf "scale=720:576"  -colorspace bt470bg -color_primaries bt470bg -color_trc gamma28 \
--c:v rawvideo -pix_fmt yuv420p -c:a pcm_s16le -f matroska - | ffplay -fs -
+-c:v rawvideo -c:a pcm_s16le -f matroska - | ffplay -fs -
 ```
 
 #NTSC
